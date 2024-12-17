@@ -1,110 +1,164 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="hy">
 <head>
-  <meta charset="UTF-8">
-  <title>Antesanelli</title>
-  <style>
-    body {
-      background-color: #87CEEB;
-      /* Ganti nilai background-color dengan kode warna biru awan */
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antesanelli - Գովազդի Կայք</title>
+    <style>
+        /* Հիմնական ստիլներ */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #34e89e, #0f3443);
+            color: white;
+            line-height: 1.6;
+        }
 
-    .header {
-      background-color: #87CEEB;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            
+            padding: 2rem;
+        }
 
-    .header h1 {
-      color: white;
-      font-size: 4rem;
-      margin: 0;
-      text-align: center;
-    }
+        .header h1 {
+            font-size: 4rem;
+            color: #fff;
+            margin: 0;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
 
-    .header p {
-      color: white;
-      font-size: 1.5rem;
-      margin: 1rem 0 0 0;
-      text-align: center;
-    }
+        .header p {
+            font-size: 1.5rem;
+            color: #fff;
+            margin: 1rem 0;
+        }
 
-    .explore {
-      background-color: white;
-      border: none;
-      border-radius: 2rem;
-      color: #87CEEB;
-      /* Ganti nilai color dengan kode warna biru awan */
-      font-size: 1.5rem;
-      padding: 1rem 2rem;
-      margin-top: 2rem;
-      text-decoration: none;
-      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    }
+        .header a {
+            padding: 1rem 3rem;
+            background: #ff5e62;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
 
-    .explore:hover {
-      background-color: #87CEEB;
-      /* Ganti nilai background-color dengan kode warna biru awan */
-      color: white;
-    }
+        .header a:hover {
+            background: #ff416c;
+            transform: scale(1.1);
+        }
 
-    .content {
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem;
-    }
+        .content {
+            padding: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
 
-    .content h2 {
-      color: #87CEEB;
-      /* Ganti nilai color dengan kode warna biru awan */
-      font-size: 3rem;
-      text-align: center;
-    }
+        .content h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            color: #0f3443;
+        }
 
-    .content p {
-      color: #696969;
-      font-size: 1.2rem;
-      text-align: justify;
-      line-height: 1.5;
-      margin-top: 1rem;
-    }
-  </style>
+        .content p {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .pricing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: #fff;
+            color: #333;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.8rem;
+            color: #ff5e62;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-card p {
+            font-size: 1.3rem;
+            margin: 0.5rem 0;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            background: #0f3443;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 5rem;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="header">
-    <h1>ANTESANELI</h1>
-    <a href="https://t.me/herados" class="explore">Պատվիրել գովազդ</a>
-  </div>
-  <div class="content">
-   
-    <html lang="en">
 
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Antesanelli Ads Site</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
+    <div class="header">
+        <h1>Antesanelli</h1>
+        <p>Հիանալի Գովազդի Հարթակ</p>
+        <a href="https://www.instagram.com/antesanelli">Պատվիրել Գովազդ</a>
+    </div>
 
-    <body>
-      <section id="contact">
-        <div class="container">
-          <h2>ԳՈՎԱԶԴ</h2>
-          <div class="row">
-            <div class="col">
-              <h3>Գնացուցակ</h3>
-              <p>Սթորի գովազդ 24ժ - 2000֏</p>
-              <p>Reels տարբերակով միշտ մնում է էջում - 3000֏</p>
-                    <p>Telegram Post - 24ժ - 1500֏ </p>
-              <p>Ինստագրամ Story,Reels,Telegram post - 5000֏ </p>
+    <div class="content">
+        <h2>Ինչու ընտրել մեզ</h2>
+        <p>Մենք առաջարկում ենք արագ և արդյունավետ գովազդի լուծումներ, որոնք կօգնեն ձեր բիզնեսին աճել և վերելք ունենալ:</p>
+
+        <div class="pricing">
+            <div class="pricing-card">
+                <h3>Սթորի</h3>
+                <p>24 ժամ - 2000֏</p>
             </div>
+            <div class="pricing-card">
+                <h3>Reelsկ</h3>
+                <p>Միշտ մնում է էջում - 3000֏</p>
+            </div>
+            <div class="pricing-card">
+                <h3>Telegram Post</h3>
+                <p>24 ժամ - 1500֏</p>
+            </div>
+            <div class="pricing-card">
+                <h3>Ամբողջ Փաթեթ</h3>
+                <p>Instagram + Telegram - 5000֏</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Antesanelli. Բոլոր իրավունքները պաշտպանված են:</p>
+    </div>
+
+</body>
+</html>
