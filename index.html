@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antesanelli - Գովազդի Կայք</title>
     <style>
-        /* Հիմնական ստիլներ */
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
@@ -22,7 +21,6 @@
             height: 100vh;
             background: rgba(0, 0, 0, 0.6);
             text-align: center;
-            
             padding: 2rem;
         }
 
@@ -75,6 +73,34 @@
             font-size: 1.2rem;
             color: #333;
             line-height: 1.8;
+        }
+
+        /* Views Section */
+        .views {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 20px;
+        }
+
+        .view-card {
+            background: #fff;
+            color: #333;
+            padding: 0.8rem 1.2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .view-card h3 {
+            color: #ff5e62;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .view-card p {
+            font-size: 1rem;
+            margin-top: 5px;
         }
 
         .pricing {
@@ -136,13 +162,25 @@
         <h2>Ինչու ընտրել մեզ</h2>
         <p>Մենք առաջարկում ենք արագ և արդյունավետ գովազդի լուծումներ, որոնք կօգնեն ձեր բիզնեսին աճել և վերելք ունենալ:</p>
 
+        <!-- Views Section -->
+        <div class="views">
+            <div class="view-card">
+                <h3>Սթորի Դիտումներ</h3>
+                <p>1500 Դիտում</p>
+            </div>
+            <div class="view-card">
+                <h3>Reels Դիտումներ</h3>
+                <p>15000+ Դիտում</p>
+            </div>
+        </div>
+
         <div class="pricing">
             <div class="pricing-card">
                 <h3>Սթորի</h3>
                 <p>24 ժամ - 2000֏</p>
             </div>
             <div class="pricing-card">
-                <h3>Reelsկ</h3>
+                <h3>Reels</h3>
                 <p>Միշտ մնում է էջում - 3000֏</p>
             </div>
             <div class="pricing-card">
